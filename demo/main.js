@@ -6,8 +6,7 @@ function lg(s) { console.log(s); } // debug
 var
 	// * Init
 	canvas = document.getElementsByTagName('canvas')[0],
-	gl = canvas && canvas.getContext('webgl'),
-	webgl = gl && new WebGL(gl),
+	webgl = new WebGL(canvas),
 	btnLeft = false,
 	// * Camera
 	cam_rad = 10,
@@ -18,9 +17,6 @@ var
 	cam_eX = 0, cam_eY = 0, cam_eZ = 0,
 	cam_cX = 0, cam_cY = 0, cam_cZ = 0,
 	cam_uX = 0, cam_uY = 0, cam_uZ = 1;
-
-if (!webgl)
-	return;
 
 // ### Lights ###
 webgl.lights.enable()

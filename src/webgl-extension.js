@@ -1,9 +1,13 @@
-function WebGL(gl) {
+function WebGL(canvas) {
+    var gl =
+		canvas.getContext('webgl') ||
+		canvas.getContext('experimental-webgl');
+
 	// Building objects needed
 	this.Matrix   ( );
 	this.Canvas   ( gl );
 	this.Shaders  ( gl );
-	this.Camera   ( gl, this.canvas.canvas(), this.matrix );
+	this.Camera   ( gl, this.matrix );
 	this.Textures ( gl, this.shaders.program() );
 	this.Objects  ( gl, this.matrix, this.textures, this.shaders );
 	this.Lights   ( gl, this.shaders );
