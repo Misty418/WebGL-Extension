@@ -12,4 +12,5 @@ WebGL.prototype.Canvas = function(gl) {
 			);
 		}
 	};
+	this.canvas.resize();
 };
