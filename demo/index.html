@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>WebGL-Extension : Demo</title>
+<style type="text/css">
+body { margin:1em; background:#222; color:#ddd; font:12px sans-serif; }
+a { text-decoration:none; color:#aaf; }
+a:hover { text-decoration:underline; }
+#global { width:600px; margin:auto; overflow:auto; padding:0 1em; background:rgba(0,0,0,0.2); }
+h1 a { font-size:12px; }
+canvas { width:100%; height:450px; position:relative; }
+</style>
+<!-- WebGL-Extension -->
+<script type="text/javascript" src="../src/gl-matrix.js"></script>
+<script type="text/javascript" src="../src/webgl-extension.js"></script>
+<script type="text/javascript" src="../src/matrix.js"></script>
+<script type="text/javascript" src="../src/canvas.js"></script>
+<script type="text/javascript" src="../src/camera.js"></script>
+<script type="text/javascript" src="../src/shaders.js"></script>
+<script type="text/javascript" src="../src/textures.js"></script>
+<script type="text/javascript" src="../src/objects.js"></script>
+<script type="text/javascript" src="../src/lights.js"></script>
+<!-- Demo -->
+<script type="text/javascript" src="primitives.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+	<div id="global">
+		<h1>WebGL-Extension : Demo <a target="_blank" href="https://github.com/Mnms/WebGL-Extension">GitHub</a></h1>
+		<canvas></canvas>
+		<h3>How to test&nbsp;:</h3>
+		<ul>
+			<li><b>mouseLeft + mouseMove</b> : Move the spherical camera.</li>
+			<li><b>mouseWheel</b> : Zoom.</li>
+			<li><b>L</b> : Toggle all the lights.</li>
+			<li><b>A</b> : Toggle the blue directionnal light.</li>
+			<li><b>B</b> : Toggle the yellow directionnal light.</li>
+			<!-- <li><b>G</b> : Toggle the grid.</li> -->
+		</ul>
+		<h3>Credits&nbsp;:</h3>
+		<ul>
+			<li><a target="_blank" href="http://melanieducani.com">Mélanie Ducani</a></li>
+			<li><a target="_blank" href="http://mr21.fr">Thomas Tortorini</a></li>
+		</ul>
+	</div>
+</body>
+</html>
